@@ -1,4 +1,4 @@
- <!--
+<!--
   NOTES:
 Color Scheme
 Eggplant RGB (115, 75, 94) - buttons and filling percentages [redish purple]
@@ -8,228 +8,277 @@ Battleship gray RGB (138, 141, 145) - text [med gray]
 Davy's gray RGB (86, 88, 87) - Card back ground [dark gray]
 
  -->
- 
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
   <head>
     <title>Andrew's - Projects</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./mainCss.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./mainCss.css" />
 
-    <script type="text/JavaScript" src="projectPageJS.js" ></script>
-
+    <script type="text/JavaScript" src="./jsFolder/projectOne.js"></script>
   </head>
-<body class="" style="background: linear-gradient(20deg, #3a3636 0%, #ffffff 100%);">
-
-  <!-- Navigation tabs big-med pages-->
-  <div class="w3-container w3-center w3-black w3-hide-small" style="margin-bottom: -12px;">
-
-    <a href="./index.html">
-      <button class="w3-bar-item w3-button" onclick=""><i>Home</i></button>
-    </a>
-    <a href="./projectOnePage.html">
-      <button id="Project 1 btn" disabled class="projectBtn w3-bar-item w3-button" onclick=""><i>Project 1</i></button>
-    </a>
-    <a href="./projectTwoPage.html">
-      <button id="Project 2 btn" class="projectBtn w3-bar-item w3-button" onclick="openProject('Project 2', 'Project 2 btn')"><i>Project 2</i></button>
-    </a>
-    <a href="./projectThreePage.html">
-      <button id="Project 3 btn" class="projectBtn w3-bar-item w3-button" onclick="openProject('Project 3', 'Project 3 btn')"><i>Project 3</i></button>
-    </a>
-  </div>
-
-  <!-- Navigation tabs small pages-->
-  <div class="w3-container w3-text-black w3-hide-large w3-hide-medium" style="margin-bottom: -12px; background-color: black;">
-    <button class="w3-button w3-black w3-xlarge" style="" onclick="w3_open()">☰</button>
-
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-        <a href="./index.html">
+  <body
+    class=""
+    style="background: linear-gradient(20deg, #3a3636 0%, #ffffff 100%)"
+  >
+    <!-- Navigation tabs big-med pages-->
+    <div
+      class="w3-container w3-center w3-black w3-hide-small"
+      style="margin-bottom: -12px"
+    >
+      <a href="./index.html">
         <button class="w3-bar-item w3-button" onclick=""><i>Home</i></button>
-        </a>
-
+      </a>
       <a href="./projectOnePage.html">
-        <button disabled id="Project 1 btn" class="projectBtn w3-bar-item w3-button" onclick=""><i>Project One Page</i></button>
+        <button
+          id="Project 1 btn"
+          disabled
+          class="projectBtn w3-bar-item w3-button"
+          onclick=""
+        >
+          <i>Project 1</i>
+        </button>
       </a>
       <a href="./projectTwoPage.html">
-      <button id="Project 2 btn" class="projectBtn w3-bar-item w3-button" onclick=""><i>Project Two Page</i></button>
+        <button
+          id="Project 2 btn"
+          class="projectBtn w3-bar-item w3-button"
+          onclick="openProject('Project 2', 'Project 2 btn')"
+        >
+          <i>Project 2</i>
+        </button>
       </a>
       <a href="./projectThreePage.html">
-      <button id="Project 3 btn" class="projectBtn w3-bar-item w3-button" onclick=""><i>Project Three Page</i></button>
+        <button
+          id="Project 3 btn"
+          class="projectBtn w3-bar-item w3-button"
+          onclick="openProject('Project 3', 'Project 3 btn')"
+        >
+          <i>Project 3</i>
+        </button>
       </a>
     </div>
-  </div>
 
-  <!-- Page Container -->
-  <div class="w3-content w3-margin-top w3-animate-left" style="margin-bottom: -12px; max-width:1400px;">
+    <!-- Navigation tabs small pages-->
+    <div
+      class="w3-container w3-text-black w3-hide-large w3-hide-medium"
+      style="margin-bottom: -12px; background-color: black"
+    >
+      <button class="w3-button w3-black w3-xlarge" style="" onclick="w3_open()">
+        ☰
+      </button>
 
+      <div
+        class="w3-sidebar w3-bar-block w3-border-right"
+        style="display: none"
+        id="mySidebar"
+      >
+        <button onclick="w3_close()" class="w3-bar-item w3-large">
+          Close &times;
+        </button>
+        <a href="./index.html">
+          <button class="w3-bar-item w3-button" onclick=""><i>Home</i></button>
+        </a>
 
+        <a href="./projectOnePage.html">
+          <button
+            disabled
+            id="Project 1 btn"
+            class="projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>Project One Page</i>
+          </button>
+        </a>
+        <a href="./projectTwoPage.html">
+          <button
+            id="Project 2 btn"
+            class="projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>Project Two Page</i>
+          </button>
+        </a>
+        <a href="./projectThreePage.html">
+          <button
+            id="Project 3 btn"
+            class="projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>Project Three Page</i>
+          </button>
+        </a>
+      </div>
+    </div>
 
+    <!-- Page Container -->
+    <div
+      class="w3-content w3-margin-top w3-animate-left"
+      style="margin-bottom: -12px; max-width: 1400px"
+    >
+      <!--Project 1 ==========================================-->
+      <div id="Project 1" class="project">
+        <div class="w3-card-4">
+          <header class="w3-center project-green-background">
+            <h1 class="w3-text-align-center w3-text-white">
+              FireBorn Mobile App
+            </h1>
+          </header>
 
-    <!--Project 1 ==========================================-->
-    <div id="Project 1" class="project">
+          <div class="w3-center w3-hide-medium w3-hide-small">
+            <!-- width="560" height="315" (iframe starting width and height)-->
+            <iframe
+              title="Project Example"
+              id="testProjectOne"
+              style="width: 60%; height: 80vh"
+              src="https://www.youtube.com/embed/Ez6yEMDjSWg?si=e5cvvKYQjPxyOfZ9?mute=1"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
 
-      <div class="w3-card-4 " >
+          <div class="w3-center w3-hide-small w3-hide-large">
+            <!-- width="560" height="315" (iframe starting width and height)-->
+            <iframe
+              title="Project Example"
+              id="testProjectOne"
+              style="width: 75%; height: 100vh"
+              src="https://www.youtube.com/embed/Ez6yEMDjSWg?si=e5cvvKYQjPxyOfZ9?mute=1"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
 
-        <header class="w3-center project-green-background ">
-          <h1 class=" w3-text-align-center w3-text-white">Project 1</h1>
-        </header>
+          <div class="w3-center w3-hide-large w3-hide-medium">
+            <!-- width="560" height="315" (iframe starting width and height)-->
+            <iframe
+              title="Project Example"
+              id="testProjectOne"
+              style="width: 100%; height: 100vh"
+              src="https://www.youtube.com/embed/Ez6yEMDjSWg?si=e5cvvKYQjPxyOfZ9?mute=1"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
 
-
-        <div class=" w3-center w3-hide-medium w3-hide-small" >
-          <!-- width="560" height="315" (iframe starting width and height)-->
-          <iframe
-          title="Project Example"
-          id="testProjectOne"
-          style="width: 60%; height: 80vh;"
-          src="https://www.youtube.com/embed/Ez6yEMDjSWg?si=e5cvvKYQjPxyOfZ9?mute=1" 
-          frameborder="0" allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class=" w3-center w3-hide-small w3-hide-large" >
-          <!-- width="560" height="315" (iframe starting width and height)-->
-          <iframe
-          title="Project Example"
-          id="testProjectOne"
-          style="width: 95%; height: 100vh;"
-          src="https://www.youtube.com/embed/Ez6yEMDjSWg?si=e5cvvKYQjPxyOfZ9?mute=1" 
-          frameborder="0" allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class=" w3-center w3-hide-large w3-hide-medium" >
-          <!-- width="560" height="315" (iframe starting width and height)-->
-          <iframe
-          title="Project Example"
-          id="testProjectOne"
-          style="width: 100%; height: 100vh;"
-          src="https://www.youtube.com/embed/Ez6yEMDjSWg?si=e5cvvKYQjPxyOfZ9?mute=1" 
-          frameborder="0" allowfullscreen>
-          </iframe>
-
-        </div>
-
-        <div class="project-green-background ">
-          <h5 class="w3-margin-left w3-text-white">FireBorn Mobile Application (Apr 2023)</h5>
-          <div class="w3-margin">
-            <span class="">
-              <a class=" w3-text-white" target="_blank" href="https://github.com/AndrewBroUNCC/team_six_fireball_project/archive/refs/heads/master.zip">Download Project (ZIP)</a>
-              <span class="w3-margin-left ">
-                <a class=" w3-text-white" target="_blank" href="https://github.com/AndrewBroUNCC/team_six_fireball_project">Github Repository</a>              
+          <div class="project-green-background">
+            <h5 class="w3-margin-left w3-text-white">
+              FireBorn Mobile Application (Apr 2023)
+            </h5>
+            <div class="w3-margin">
+              <span class="">
+                <a
+                  class="w3-text-white"
+                  target="_blank"
+                  href="https://github.com/AndrewBroUNCC/team_six_fireball_project/archive/refs/heads/master.zip"
+                  >Download Project (ZIP)</a
+                >
+                <span class="w3-margin-left">
+                  <a
+                    class="w3-text-white"
+                    target="_blank"
+                    href="https://github.com/AndrewBroUNCC/team_six_fireball_project"
+                    >Github Repository</a
+                  >
+                </span>
               </span>
-            </span>
-          </div>
-
-          <!-- Setting up two cards to have what the projects are about/what I learned. -->
-          <div class="w3-row">
-            <!-- 1st Card -->
-            <div class="w3-half ">
-              <div class="w3-container project-background" style="">
-                <ul class="">
-                  <li class="w3-margin-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Donec facilisi aliquam ultricies; sociosqu torquent mus. Cubilia feugiat</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo cursus</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia risus cras</li>
-                  <li class="w3-margin-bottom">nascetur facilisi tempor potenti phasellus. Duis purus viverra vehicula</li>
-                </ul>
-              </div>
             </div>
 
-            <!-- 2nd Card -->
-            <div class="w3-half">
-              <div class="w3-container project-background" style="">
-                <ul class=" ">
-                  <li class="w3-margin-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Donec facilisi aliquam ultricies; sociosqu torquent mus. Cubilia feugiat</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo cursus</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia risus cras</li>
-                  <li class="w3-margin-bottom">nascetur facilisi tempor potenti phasellus. Duis purus viverra vehicula</li>
-                </ul>
+            <!-- Setting up two cards to have what the projects are about/what I learned. -->
+            <div class="w3-row">
+              <!-- 1st Card -->
+              <div class="w3-half">
+                <div class="w3-container project-background" style="">
+                  <ul class="">
+                    <li class="w3-margin-bottom">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Donec
+                      facilisi aliquam ultricies; sociosqu torquent mus. Cubilia
+                      feugiat
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Leo
+                      cursus
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit.
+                      Cubilia risus cras
+                    </li>
+                    <li class="w3-margin-bottom">
+                      nascetur facilisi tempor potenti phasellus. Duis purus
+                      viverra vehicula
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-  
-    <div id="Project 3" class="project" style="display:none">
-      <div class="w3-card-4 " >
-
-        <header class="w3-center project-green-background ">
-          <h1 class=" w3-text-align-center w3-text-white">Project 3</h1>
-        </header>
-
-
-        <div class=" w3-center" >
-          <!-- width="560" height="315" (iframe starting width and height)
-          <iframe
-          title="Project Example"
-          id="testProjectOne"
-          style="width: 50%; height: 50vh;"
-          src="https://www.youtube.com/embed/C0DPdy98e4c?mute=1" 
-          frameborder="0" allowfullscreen>
-          </iframe>
-
-        </div>
-
-        <div class="project-green-background ">
-          <h5 class="w3-margin-left w3-text-white">Project 3   (DATE Jun 2021- Sept 2022)</h5>
-        
-
-          <!-- Setting up two cards to have what the projects are about/what I learned. 
-          <div class="w3-row">
-            <!-- 1st Card 
-            <div class="w3-half ">
-              <div class="w3-container body-background" style="">
-                <ul class="">
-                  <li class="w3-margin-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Donec facilisi aliquam ultricies; sociosqu torquent mus. Cubilia feugiat</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo cursus</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia risus cras</li>
-                  <li class="w3-margin-bottom">nascetur facilisi tempor potenti phasellus. Duis purus viverra vehicula</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- 2nd Card 
-            <div class="w3-half">
-              <div class="w3-container body-background" style="">
-                <ul class=" ">
-                  <li class="w3-margin-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Donec facilisi aliquam ultricies; sociosqu torquent mus. Cubilia feugiat</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo cursus</li>
-                  <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia risus cras</li>
-                  <li class="w3-margin-bottom">nascetur facilisi tempor potenti phasellus. Duis purus viverra vehicula</li>
-                </ul>
+              <!-- 2nd Card -->
+              <div class="w3-half">
+                <div class="w3-container project-background" style="">
+                  <ul class=" ">
+                    <li class="w3-margin-bottom">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Donec
+                      facilisi aliquam ultricies; sociosqu torquent mus. Cubilia
+                      feugiat
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Leo
+                      cursus
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit.
+                      Cubilia risus cras
+                    </li>
+                    <li class="w3-margin-bottom">
+                      nascetur facilisi tempor potenti phasellus. Duis purus
+                      viverra vehicula
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  -->
-  </div>
-  <!-- End Page Container -->
+    <!-- End Page Container -->
 
-
-  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-  <footer class=" w3-text-white w3-bar w3-center w3-margin-top " style="background-color: black;">
-    <p class="w3-text-white">Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <!-- End footer -->
-  </footer>
-  
-</body>
-
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer
+      class="w3-text-white w3-bar w3-center w3-margin-top"
+      style="background-color: black"
+    >
+      <p class="w3-text-white">Find me on social media.</p>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <!-- End footer -->
+    </footer>
+  </body>
 </html>

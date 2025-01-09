@@ -14,64 +14,115 @@ https://webpages.charlotte.edu/abrow359/itis3135/
 <html>
   <head>
     <title>Andrew's Portfolio - Home</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/JavaScript" defer src="projectPageJS.js"></script>
-    <link rel="stylesheet" href="./mainCss.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/JavaScript"
+      defer
+      src="../MyPortfolio/jsFolder/home.js"
+    ></script>
+    <link rel="stylesheet" href="./mainCss.css" />
   </head>
-<body  id="body-background-change" class="container body-background">
+  <body id="body-background-change" class="container body-background">
+    <!-- Page Container -->
+    <div
+      class="w3-content w3-margin-top w3-animate-left"
+      style="max-width: 1400px"
+    >
+      <!-- Navigation tabs small pages-->
+      <div
+        class="w3-container w3-text-black w3-hide-large w3-hide-medium"
+        style="background-color: black"
+      >
+        <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">
+          ☰
+        </button>
 
+        <div
+          class="w3-sidebar w3-bar-block w3-border-right"
+          style="display: none"
+          id="mySidebar"
+        >
+          <button onclick="w3_close()" class="w3-bar-item w3-large">
+            Close &times;
+          </button>
+          <a href="./index.html">
+            <button disabled class="w3-bar-item w3-button" onclick="">
+              <i>Home</i>
+            </button>
+          </a>
+          <a href="./projectOnePage.html">
+            <button
+              id="Project 1 btn"
+              class="projectBtn w3-bar-item w3-button"
+              onclick=""
+            >
+              <i>Project One Page</i>
+            </button>
+          </a>
+          <a href="./projectTwoPage.html">
+            <button
+              id="Project 2 btn"
+              class="projectBtn w3-bar-item w3-button"
+              onclick=""
+            >
+              <i>Project Two Page</i>
+            </button>
+          </a>
+          <a href="./projectThreePage.html">
+            <button
+              id="Project 3 btn"
+              class="projectBtn w3-bar-item w3-button"
+              onclick=""
+            >
+              <i>Project Three Page</i>
+            </button>
+          </a>
+          <a href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry">
+            <button class="w3-bar-item w3-button" onclick="">
+              <i>Get in Touch</i>
+            </button>
+          </a>
+        </div>
+      </div>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top w3-animate-left" style="max-width:1400px;">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third" style="background-color: none">
+          <!--Col 1 card 1 PICTURE-->
+          <div class="" style="background-color: none">
+            <div class="w3-display-container">
+              <img
+                class="profile-image"
+                src="./ProjectPictures/Half_and_Half_no_bg.png"
+                style=""
+                alt="Avatar"
+              />
+              <!-- <img class=" w3-hover-opacity w3-hide-large w3-hide-medium" src="./ProjectPictures/Me_Profess.png" style="width:100%" alt="Avatar"> -->
 
-  <!-- Navigation tabs small pages-->
-  <div class="w3-container w3-text-black w3-hide-large w3-hide-medium" style="background-color: black;">
-    <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
-
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-      <a href="./index.html">
-        <button disabled class="w3-bar-item w3-button" onclick=""><i>Home</i></button>
-      </a>
-      <a href="./projectOnePage.html">
-        <button id="Project 1 btn" class="projectBtn w3-bar-item w3-button" onclick=""><i>Project One Page</i></button>
-      </a>
-      <a href="./projectTwoPage.html">
-        <button id="Project 2 btn" class="projectBtn w3-bar-item w3-button" onclick=""><i>Project Two Page</i></button>
-      </a>
-      <a href="./projectThreePage.html">
-        <button id="Project 3 btn" class="projectBtn w3-bar-item w3-button" onclick=""><i>Project Three Page</i></button>
-      </a>
-      <a href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry">
-        <button class="w3-bar-item w3-button" onclick=""><i>Get in Touch</i></button>
-      </a>
-    </div>
-  </div>
-
-  <!-- The Grid -->
-  <div class="w3-row-padding" >
-  
-    <!-- Left Column -->
-    <div class="w3-third" style="background-color: none">
-      
-      <!--Col 1 card 1 PICTURE-->
-      <div class="" style="background-color: none;">
-        <div class="w3-display-container">
-
-          <img class=" profile-image" src="./ProjectPictures/Half_and_Half_no_bg.png" style="" alt="Avatar">
-          <!-- <img class=" w3-hover-opacity w3-hide-large w3-hide-medium" src="./ProjectPictures/Me_Profess.png" style="width:100%" alt="Avatar"> -->
-
-          <h3 id="" class=" w3-center w3-margin-left"><i>Andrew Brown</i></h3>
-          <div class="w3-center">
-            <a class="" href="https://docs.google.com/document/d/1M7IndGp7d2CAOfrbSFRrLOa-XiTSvFTk/edit?usp=sharing&ouid=115647528487262186906&rtpof=true&sd=true" download >Download My Resume!</a>
-          </div>
-          <!-- <script src="https://cdn.jsdelivr.net/npm/skulpt@1.0.0/dist/skulpt.min.js"></script> -->
-<!-- <script>
+              <h3 id="" class="w3-center w3-margin-left">
+                <i>Andrew Brown</i>
+              </h3>
+              <div class="w3-center">
+                <a
+                  class=""
+                  href="https://docs.google.com/document/d/1M7IndGp7d2CAOfrbSFRrLOa-XiTSvFTk/edit?usp=sharing&ouid=115647528487262186906&rtpof=true&sd=true"
+                  download
+                  >Download My Resume!</a
+                >
+              </div>
+              <!-- <script src="https://cdn.jsdelivr.net/npm/skulpt@1.0.0/dist/skulpt.min.js"></script> -->
+              <!-- <script>
   // Write your Python Turtle code here
   var code = `
 import turtle
@@ -83,65 +134,158 @@ t.forward(100)
   // Run the Python code using Skulpt
   Skulpt.run(code);
 </script> -->
-        </div>
+            </div>
 
-        <!--Profile info container =D -->
-        <div class="w3-margin-top w3-margin-left w3-margin-right">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" style="color: black;"></i>Software Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large" style="color: black;"></i>Cornelius, NC</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large " style="color: black;"></i>DevAndrewBro@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large " style="color: black;"></i>256-609-0166</p>
-          <hr>
-          <h4>Select your color!</h4>
-          <form class="w3-margin-bottom">
-            <input type="color" id="background-selector" name="background-selector" value="#9CA2F2" />
-            <label for="background-selector">Background</label>
-          </form>
-          <Button class="w3-bottombar w3-button w3-round w3-ripple w3-text-white w3-hover-black w3-center index-button-update" onclick="changeBackground()">Update!</Button>
+            <!--Profile info container =D -->
+            <div class="w3-margin-top w3-margin-left w3-margin-right">
+              <p>
+                <i
+                  class="fa fa-briefcase fa-fw w3-margin-right w3-large"
+                  style="color: black"
+                ></i
+                >Software Developer
+              </p>
+              <p>
+                <i
+                  class="fa fa-home fa-fw w3-margin-right w3-large"
+                  style="color: black"
+                ></i
+                >Cornelius, NC
+              </p>
+              <p>
+                <i
+                  class="fa fa-envelope fa-fw w3-margin-right w3-large"
+                  style="color: black"
+                ></i
+                >DevAndrewBro@gmail.com
+              </p>
+              <p>
+                <i
+                  class="fa fa-phone fa-fw w3-margin-right w3-large"
+                  style="color: black"
+                ></i
+                >256-609-0166
+              </p>
+              <hr />
+              <h4>Select your color!</h4>
+              <form class="w3-margin-bottom">
+                <input
+                  type="color"
+                  id="background-selector"
+                  name="background-selector"
+                  value="#636369"
+                />
+                <label for="background-selector">Background</label>
+              </form>
+              <button
+                class="w3-bottombar w3-button w3-round w3-ripple w3-text-white w3-hover-black w3-center index-button-update"
+                onclick="changeBackground()"
+              >
+                Update!
+              </button>
 
-          <hr>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right " style="color: black;"></i>Skills</b></p>
-          
-          <p>Mobile Application Development &#40;Android Studio, Java&#41;</p>
-          <div class="w3-round-xlarge w3-small" style="background-color: white;">
-            <a onclick="move1(90)">
-              <div id="myBar1" class="w3-container w3-center w3-round-xlarge w3-text-white" style="background-color: green; width:90%">90%</div>
-            </a>
-          </div>
-          
-          <p>Web Development &#40;CSS, HTML, JavaScript, Postman&#41;</p>
-          <div class="w3-round-xlarge w3-small" style="background-color: white;">
-            <a onclick="move2(80)">
-              <div id="myBar2" class="w3-container w3-center w3-round-xlarge w3-text-white" style="background-color: green; width:80%">80%</div>
-            </a>
-          </div>
+              <hr />
+              <p class="w3-large">
+                <b
+                  ><i
+                    class="fa fa-asterisk fa-fw w3-margin-right"
+                    style="color: black"
+                  ></i
+                  >Skills</b
+                >
+              </p>
 
-          <p>Database Development &#40;Firebase, MongoDB, MSSMS, MySQL&#41;</p>
-          <div class="w3-round-xlarge w3-small" style="background-color: white;">
-            <a onclick="move3(75)">
-              <div id="myBar3" class="w3-container w3-center w3-round-xlarge w3-text-white" style="background-color: green; width:75%">75%</div>
-            </a>
-          </div>
+              <p>
+                Mobile Application Development &#40;Android Studio, Java&#41;
+              </p>
+              <div
+                class="w3-round-xlarge w3-small"
+                style="background-color: white"
+              >
+                <a onclick="move1(90)">
+                  <div
+                    id="myBar1"
+                    class="w3-container w3-center w3-round-xlarge w3-text-white"
+                    style="background-color: green; width: 90%"
+                  >
+                    90%
+                  </div>
+                </a>
+              </div>
 
-          <p>C#, C++, Python, Amazon Web Services</p> 
-          <div class="w3-round-xlarge w3-small" style="background-color: white;">
-            <a onclick="move4(65)">
-            <div id="myBar4" class="w3-container w3-center w3-round-xlarge w3-text-white" style="background-color: green; width:65%">65%</div>
-            </a>
-          </div>
+              <p>Web Development &#40;CSS, HTML, JavaScript, Postman&#41;</p>
+              <div
+                class="w3-round-xlarge w3-small"
+                style="background-color: white"
+              >
+                <a onclick="move2(80)">
+                  <div
+                    id="myBar2"
+                    class="w3-container w3-center w3-round-xlarge w3-text-white"
+                    style="background-color: green; width: 80%"
+                  >
+                    80%
+                  </div>
+                </a>
+              </div>
 
-          <hr>
+              <p>
+                Database Development &#40;Firebase, MongoDB, MSSMS, MySQL&#41;
+              </p>
+              <div
+                class="w3-round-xlarge w3-small"
+                style="background-color: white"
+              >
+                <a onclick="move3(75)">
+                  <div
+                    id="myBar3"
+                    class="w3-container w3-center w3-round-xlarge w3-text-white"
+                    style="background-color: green; width: 75%"
+                  >
+                    75%
+                  </div>
+                </a>
+              </div>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right " style="color: black;"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-text-white w3-round-xlarge  w3-center" style="background-color: green; height:24px;width:100%">100% Fluent</div>
-          </div>
-          <br>
+              <p>C#, C++, Python, Amazon Web Services</p>
+              <div
+                class="w3-round-xlarge w3-small"
+                style="background-color: white"
+              >
+                <a onclick="move4(65)">
+                  <div
+                    id="myBar4"
+                    class="w3-container w3-center w3-round-xlarge w3-text-white"
+                    style="background-color: green; width: 65%"
+                  >
+                    65%
+                  </div>
+                </a>
+              </div>
 
-          
+              <hr />
 
-          <!-- Projects Button 
+              <p class="w3-large w3-text-theme">
+                <b
+                  ><i
+                    class="fa fa-globe fa-fw w3-margin-right"
+                    style="color: black"
+                  ></i
+                  >Languages</b
+                >
+              </p>
+              <p>English</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div
+                  class="w3-text-white w3-round-xlarge w3-center"
+                  style="background-color: green; height: 24px; width: 100%"
+                >
+                  100% Fluent
+                </div>
+              </div>
+              <br />
+
+              <!-- Projects Button 
           <hr>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right " style="color: black;"></i>See My Projects</b></p>
@@ -152,127 +296,188 @@ t.forward(100)
           </div> 
           -->
 
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird" ">
-      
-      
-      <!--Col 2 Card 1 -->
-      <div class="w3-container  w3-margin-bottom" style="background-color: none;">
-      
-      <!-- PROJECTS BUTTON--> 
-      
-      <div class="w3-large w3-text-theme w3-display-top"><b><i class="fa fa-globe fa-fw w3-margin-right " style="color: black;"></i>See My Projects</b> 
-        <!-- <span class="w3-text-black"><a id="" href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry" class="w3-hide-small w3-margin-right"><h3>Get in Touch</h3></a></span> -->
-      </div>
-
-
-          <div class=" grow center-project-img ">
-            <div class=" w3-tooltip w3-margin-right">
-              <a id="" class=" caption"  href="./projectOnePage.html">
-                <div id="" class=" w3-center w3-tiny w3-container w3-hover-opacity" style="">MobileApp</div>
-                <img class=" w3-hover-opacity project-image" src="./ProjectPictures/FireBornHomePic900x600px.png" style="" alt="project picture">
-                <p id="home-caption-projects" class="w3-text">FireBorn</p>
-              </a>
+              <br />
             </div>
-
-            <div class="w3-tooltip w3-margin-right">
-              <a id="" class=" caption"   href="./projectTwoPage.html">
-                <div class="w3-center w3-tiny w3-container">Website</div>
-                <img class=" w3-hover-opacity project-image" src="./ProjectPictures/ThumbNailIndex900x600.png" style="" alt="project picture">
-                <p id="home-caption-projects" class="w3-text">Book Club Meetup</p>
-              </a>
-            </div>
-            
-            <div class="w3-tooltip">
-              <a id="" class=" caption"   href="./projectThreePage.html">
-                <div class="w3-center w3-tiny w3-container">Website</div>
-                <img class=" w3-hover-opacity project-image" src="./ProjectPictures/HomePageRESIZE_900x600px.png" style="" alt="project picture">
-                <p id="home-caption-projects" class="w3-text">First Website</p>
-              </a>
-            </div>
-
           </div>
+          <br />
 
-          <!-- PROJECTS BUTTON END-->  
-
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge " style="color: black;"></i>Work Experience</h2>
-        <div class="w3-container">
-          <!-- Work Experenice 1 (Current) -->
-          <h5 class=""><b>Software Asset Management - Duke Energy</b></h5>
-          <h6 class="" style="color: black;"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2024 - <span class="current-box w3-tag w3-round">Current</span></h6>
-          <p>Working daily with software has expanded my understanding of the lifecycle process and given me work experenice with an abundance of different technology.</p>
-          <hr>
+          <!-- End Left Column -->
         </div>
 
-        <!-- Work Experience 2-->
-        <div class="w3-container">
-          <h5 class=""><b>Workstation Support Specialist - Duke Energy</b></h5>
-          <h6 class="" style="color: black;"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2023 - <span class="current-box w3-tag w3-round">Current</span></h6>
-          <p>I keep Duke employee's devices up-to-date by imaging and replacing old hardware with new devices. I also work with senior project Management and senior analysts to do huge project requests. I work heavily with ServiceNow and Microsoft Excel.</p>
-        </div>
+        <!-- Right Column -->
+        <div class="w3-twothird">
+          <!--Col 2 Card 1 -->
+          <div
+            class="w3-container w3-margin-bottom"
+            style="background-color: none"
+          >
+            <!-- PROJECTS BUTTON-->
 
-        <!--
+            <div class="w3-large w3-text-theme w3-display-top">
+              <b
+                ><i
+                  class="fa fa-globe fa-fw w3-margin-right"
+                  style="color: black"
+                ></i
+                >See My Projects</b
+              >
+              <!-- <span class="w3-text-black"><a id="" href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry" class="w3-hide-small w3-margin-right"><h3>Get in Touch</h3></a></span> -->
+            </div>
+
+            <div class="center-project-img">
+              <div class="grow w3-tooltip w3-margin-right">
+                <a id="" class="caption" href="./projectOnePage.html">
+                  <div
+                    id=""
+                    class="w3-center w3-tiny w3-container w3-hover-opacity"
+                  >
+                    MobileApp
+                  </div>
+                  <img
+                    class="w3-hover-opacity project-image"
+                    src="./ProjectPictures/FireBornHomePic900x600px.png"
+                    alt="project picture"
+                  />
+                  <p id="home-caption-projects" class="w3-text">FireBorn</p>
+                </a>
+              </div>
+
+              <div class="grow w3-tooltip w3-margin-right">
+                <a id="" class="caption" href="./projectTwoPage.html">
+                  <div class="w3-center w3-tiny w3-container">Website</div>
+                  <img
+                    class="w3-hover-opacity project-image"
+                    src="./ProjectPictures/ThumbNailIndex900x600.png"
+                    style=""
+                    alt="project picture"
+                  />
+                  <p id="home-caption-projects" class="w3-text">
+                    Book Club Meetup
+                  </p>
+                </a>
+              </div>
+
+              <div class="grow w3-tooltip">
+                <a id="" class="caption" href="./projectThreePage.html">
+                  <div class="w3-center w3-tiny w3-container">Website</div>
+                  <img
+                    class="w3-hover-opacity project-image"
+                    src="./ProjectPictures/HomePageRESIZE_900x600px.png"
+                    style=""
+                    alt="project picture"
+                  />
+                  <p id="home-caption-projects" class="w3-text">
+                    First Website
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECTS BUTTON END-->
+
+            <h2 class="w3-text-black w3-padding-16">
+              <i
+                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge"
+                style="color: black"
+              ></i
+              >Work Experience
+            </h2>
+            <div class="w3-container">
+              <!-- Work Experenice 1 (Current) -->
+              <h5 class=""><b>Software Asset Management - Duke Energy</b></h5>
+              <h6 class="" style="color: black">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2024 -
+                <span class="current-box w3-tag w3-round">Current</span>
+              </h6>
+              <p>
+                Working daily with software has expanded my understanding of the
+                lifecycle process and given me work experenice with an abundance
+                of different technology.
+              </p>
+              <hr />
+            </div>
+
+            <!-- Work Experience 2-->
+            <div class="w3-container">
+              <h5 class="">
+                <b>Workstation Support Specialist - Duke Energy</b>
+              </h5>
+              <h6 class="" style="color: black">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2023 -
+                <span class="current-box w3-tag w3-round">Current</span>
+              </h6>
+              <p>
+                I keep Duke employee's devices up-to-date by imaging and
+                replacing old hardware with new devices. I also work with senior
+                project Management and senior analysts to do huge project
+                requests. I work heavily with ServiceNow and Microsoft Excel.
+              </p>
+            </div>
+
+            <!--
         <div class="w3-container">
           <h5 class=""><b>Graphic Designer / designsomething.com</b></h5>
           <h6 class="" style="color: black;"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
         </div>
         -->
-      </div>
-      
-      <!--Col 2  Card 2 -->
-      <div class="w3-container " style="background-color: none;">
-        <br class="w3-margin-bottom">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge " style="color: black;"></i>Education</h2>
-        
-        <!--Education 1-->
-        <div class="w3-container">
-          <h5 class=""><b>University of North Carolina at Charlotte</b></h5>
-          <h6 class="" style="color: black;"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2023</h6>
-          <p>Bachelor of Science - Computer Science</p>
-          <p class="bold">GPA: 3.9</p>
-          <hr>
+          </div>
+
+          <!--Col 2  Card 2 -->
+          <div class="w3-container" style="background-color: none">
+            <br class="w3-margin-bottom" />
+            <h2 class="w3-text-black w3-padding-16">
+              <i
+                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"
+                style="color: black"
+              ></i
+              >Education
+            </h2>
+
+            <!--Education 1-->
+            <div class="w3-container">
+              <h5 class=""><b>University of North Carolina at Charlotte</b></h5>
+              <h6 class="" style="color: black">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2023
+              </h6>
+              <p>Bachelor of Science - Computer Science</p>
+              <p class="bold">GPA: 3.9</p>
+              <hr />
+            </div>
+
+            <!--Education 2-->
+            <div class="w3-container">
+              <h5 class=""><b>Central Piedmont Community College</b></h5>
+              <h6 class="" style="color: black">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2020
+              </h6>
+              <p>Associate's Degree - Computer Science</p>
+              <p class="bold">GPA: 4.0</p>
+            </div>
+          </div>
+
+          <!-- End Right Column -->
         </div>
 
-        <!--Education 2-->
-        <div class="w3-container">
-          <h5 class=""><b>Central Piedmont Community College</b></h5>
-          <h6 class="" style="color: black;"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2020</h6>
-          <p>Associate's Degree - Computer Science</p>
-          <p class="bold">GPA: 4.0</p>
-        </div>
-      
+        <!-- End Grid -->
       </div>
 
-    <!-- End Right Column -->
+      <!-- End Page Container -->
     </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
 
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-container w3-text-white w3-center w3-margin-top" style="background-color: black;">
-  <p style="color: white;">Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <!-- End footer -->
- </footer>
-
-
-
-</body>
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer
+      class="w3-container w3-text-white w3-center w3-margin-top"
+      style="background-color: black"
+    >
+      <p style="color: white">Find me on social media.</p>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <!-- End footer -->
+    </footer>
+  </body>
 </html>

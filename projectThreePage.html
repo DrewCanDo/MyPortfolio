@@ -1,110 +1,220 @@
-  <!--
-  NOTES:
-Color Scheme
-Eggplant RGB (115, 75, 94) - buttons and filling percentages [redish purple]
-Pale Dogwood RGB (245, 211, 200) - secondary backgrounds [cream pinkish orange]
-French gray RGB (188, 189, 192) - Primary backgrounds [light gray]
-Battleship gray RGB (138, 141, 145) - text [med gray]
-Davy's gray RGB (86, 88, 87) - Card back ground [dark gray]
-
- -->
- 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Andrew's Portfolio - Project 3</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <script defer language="JavaScript" type="text/javascript" src="./projectThree.js"></script>
-    
-    <link rel="stylesheet" href="./mainCss.css">
+    <title>Andrew's - Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
+    <script defer src="./jsFolder/projectTwo.js"></script>
+
+    <link rel="stylesheet" href="./mainCss.css" />
   </head>
-<body class="" style="background: linear-gradient(20deg, #3a3636 0%, #ffffff 100%);">
-  
+  <body
+    class=""
+    style="background: linear-gradient(20deg, #3a3636 0%, #ffffff 100%)"
+  >
     <!-- Navigation tabs big-med pages-->
-    <div class="w3-container w3-center w3-black" style="margin-bottom: -12px;">
-
+    <div
+      class="w3-container w3-center w3-black w3-hide-small"
+      style="margin-bottom: -12px"
+    >
       <a href="./index.html">
         <button class="w3-bar-item w3-button" onclick=""><i>Home</i></button>
       </a>
       <a href="./projectOnePage.html">
-        <button id="Project 1 btn"  class="projectBtn w3-bar-item w3-button" onclick=""><i>Project 1</i></button>
+        <button
+          id="Project 1 btn"
+          class="projectBtn w3-bar-item w3-button"
+          onclick=""
+        >
+          <i>Project 1</i>
+        </button>
       </a>
       <a href="./projectTwoPage.html">
-        <button id="Project 2 btn"  class="projectBtn w3-bar-item w3-button" onclick=""><i>Project 2</i></button>
+        <button
+          id="Project 2 btn"
+          class="projectBtn w3-bar-item w3-button"
+          onclick=""
+        >
+          <i>Project 2</i>
+        </button>
       </a>
       <a href="./projectThreePage.html">
-        <button id="Project 3 btn" disabled class="projectBtn w3-bar-item w3-button" onclick=""><i>Project 3</i></button>
+        <button
+          id="Project 3 btn"
+          disabled
+          class="projectBtn w3-bar-item w3-button"
+          onclick=""
+        >
+          <i>Project 3</i>
+        </button>
       </a>
     </div>
 
     <!-- Navigation tabs small pages-->
-    <div class="w3-container w3-text-black w3-hide-large w3-hide-medium w3-hide-small" style="margin-bottom: -12px; background-color: black;">
-        <button class="w3-button w3-black w3-xlarge" style="" onclick="w3_open();">☰</button>
+    <div
+      class="w3-container w3-text-black w3-hide-large w3-hide-medium"
+      style="margin-bottom: -12px; background-color: black"
+    >
+      <button
+        class="w3-button w3-black w3-xlarge"
+        style=""
+        onclick="w3_open();"
+      >
+        ☰
+      </button>
 
-      <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="P3sideBar">
-          <button onclick="w3_close();" class="w3-bar-item w3-large">Close &times;</button>
-          <a href="./index.html">
+      <div
+        class="w3-sidebar w3-bar-block w3-border-right"
+        style="display: none"
+        id="mySidebar"
+      >
+        <button onclick="w3_close();" class="w3-bar-item w3-large">
+          Close &times;
+        </button>
+        <a href="./index.html">
           <button class="w3-bar-item w3-button" onclick=""><i>Home</i></button>
-          </a>
+        </a>
 
         <a href="./projectOnePage.html">
-          <button id="Project 1 btn" class="projectBtn w3-bar-item w3-button" onclick=""><i>Project One Page</i></button>
+          <button
+            id="Project 1 btn"
+            class="projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>Project One Page</i>
+          </button>
         </a>
         <a href="./projectTwoPage.html">
-        <button id="Project 2 btn"  class="projectBtn w3-bar-item w3-button" onclick=""><i>Project Two Page</i></button>
+          <button
+            id="Project 2 btn"
+            class="projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>Project Two Page</i>
+          </button>
         </a>
         <a href="./projectThreePage.html">
-        <button id="Project 3 btn" disabled class="projectBtn w3-bar-item w3-button" onclick=""><i>Project Three Page</i></button>
+          <button
+            id="Project 3 btn"
+            disabled
+            class="projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>Project Three Page</i>
+          </button>
         </a>
       </div>
     </div>
 
     <!-- Page Container-->
-    <div class="w3-content w3-margin-top w3-animate-left" style="margin-bottom: -12px; max-width:1400px;">
-
+    <div
+      class="w3-content w3-margin-top w3-animate-left"
+      style="margin-bottom: -12px; max-width: 1400px"
+    >
       <!--Project 3 ==========================================-->
       <div id="Project 3" class="project" style="">
-        <div class="w3-card-4 " >
-
-          <header class="w3-center project-green-background ">
-            <h1 class=" w3-text-align-center w3-text-white">First Website</h1>
+        <div class="w3-card-4">
+          <header class="w3-center project-green-background">
+            <h1 class="w3-text-align-center w3-text-white">First Website</h1>
           </header>
 
+          <div class="w3-content w3-display-container w3-text-align-center">
+            <img
+              class="mySlides"
+              style="width: 100%"
+              src="./WebsiteITIS3135Pictures/HomePage.png"
+              alt="picture of home page from first website"
+            />
+            <img
+              class="mySlides"
+              style="width: 100%"
+              src="./WebsiteITIS3135Pictures/InputPage.png"
+              alt="picture of input page from first website"
+            />
+            <img
+              class="mySlides"
+              style="width: 100%"
+              src="./WebsiteITIS3135Pictures/CalculatorPage.png"
+              alt="picture of calculator page from first website"
+            />
+            <img
+              class="mySlides"
+              style="width: 100%"
+              src="./WebsiteITIS3135Pictures/BrandPage.png"
+              alt="picture of brand page from first website"
+            />
+            <img
+              class="mySlides"
+              style="width: 100%"
+              src="./WebsiteITIS3135Pictures/TablePage.png"
+              alt="picture of table page from first website"
+            />
 
-          <div class=" w3-content w3-display-container w3-text-align-center" >
-            <img class="mySlides" style="width: 100%;" src="./WebsiteITIS3135Pictures/HomePage.png" alt="picture of home page from first website" >
-            <img class="mySlides" style="width: 100%;" src="./WebsiteITIS3135Pictures/InputPage.png" alt="picture of input page from first website" >
-            <img class="mySlides" style="width: 100%;" src="./WebsiteITIS3135Pictures/CalculatorPage.png" alt="picture of calculator page from first website" >
-            <img class="mySlides" style="width: 100%;" src="./WebsiteITIS3135Pictures/BrandPage.png" alt="picture of brand page from first website" >
-            <img class="mySlides" style="width: 100%;" src="./WebsiteITIS3135Pictures/TablePage.png" alt="picture of table page from first website" >
-
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
           </div>
 
-          <div class="project-green-background ">
-            <h5 class="w3-margin-left w3-text-white">My First Website  (2022)</h5>
+          <div class="project-green-background">
+            <h5 class="w3-margin-left w3-text-white">
+              My First Website (2022)
+            </h5>
             <div class="w3-margin">
-              <a class=" w3-text-white" target="_blank" href="https://webpages.charlotte.edu/abrow359/itis3135">UNCC Student Website</a>
+              <a
+                class="w3-text-white"
+                target="_blank"
+                href="https://webpages.charlotte.edu/abrow359/itis3135"
+                >UNCC Student Website</a
+              >
             </div>
 
             <!-- Setting up two cards to have what the projects are about/what I learned. -->
             <div class="w3-row">
               <!-- 1st Card -->
-              <div class="w3-half ">
+              <div class="w3-half">
                 <div class="w3-container project-background" style="">
                   <ul class="">
-                    <li class="w3-margin-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</li>
-                    <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Donec facilisi aliquam ultricies; sociosqu torquent mus. Cubilia feugiat</li>
-                    <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo cursus</li>
-                    <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia risus cras</li>
-                    <li class="w3-margin-bottom">nascetur facilisi tempor potenti phasellus. Duis purus viverra vehicula</li>
+                    <li class="w3-margin-bottom">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Donec
+                      facilisi aliquam ultricies; sociosqu torquent mus. Cubilia
+                      feugiat
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Leo
+                      cursus
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit.
+                      Cubilia risus cras
+                    </li>
+                    <li class="w3-margin-bottom">
+                      nascetur facilisi tempor potenti phasellus. Duis purus
+                      viverra vehicula
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -113,11 +223,28 @@ Davy's gray RGB (86, 88, 87) - Card back ground [dark gray]
               <div class="w3-half">
                 <div class="w3-container project-background" style="">
                   <ul class=" ">
-                    <li class="w3-margin-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</li>
-                    <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Donec facilisi aliquam ultricies; sociosqu torquent mus. Cubilia feugiat</li>
-                    <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo cursus</li>
-                    <li class="w3-margin-bottom">Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia risus cras</li>
-                    <li class="w3-margin-bottom">nascetur facilisi tempor potenti phasellus. Duis purus viverra vehicula</li>
+                    <li class="w3-margin-bottom">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Donec
+                      facilisi aliquam ultricies; sociosqu torquent mus. Cubilia
+                      feugiat
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Leo
+                      cursus
+                    </li>
+                    <li class="w3-margin-bottom">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit.
+                      Cubilia risus cras
+                    </li>
+                    <li class="w3-margin-bottom">
+                      nascetur facilisi tempor potenti phasellus. Duis purus
+                      viverra vehicula
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -125,22 +252,22 @@ Davy's gray RGB (86, 88, 87) - Card back ground [dark gray]
           </div>
         </div>
       </div>
-    
-  </div>
-  <!-- End Page Container -->
+    </div>
+    <!-- End Page Container -->
 
-
-  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-  <footer class=" w3-text-white w3-bar w3-center w3-margin-top" style="background-color: black;">
-    <p class="w3-text-white">Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <!-- End footer -->
-  </footer>
-</body>
-
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer
+      class="w3-text-white w3-bar w3-center w3-margin-top"
+      style="background-color: black"
+    >
+      <p class="w3-text-white">Find me on social media.</p>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <!-- End footer -->
+    </footer>
+  </body>
 </html>

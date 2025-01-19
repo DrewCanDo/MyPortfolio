@@ -49,10 +49,20 @@ p {
 }
 
 .index-button-update {
-  letter-spacing: 2px;
-  filter: drop-shadow(-4px 2px 4px #000000);
-  background-color: green;
-  width: 60%;
+  background: black;
+  color: white;
+  border: 2px solid;
+  border-color: white;
+  padding: 0.5em 3em;
+  font-size: 1em;
+  transition: all 0.25s;
+}
+
+.index-button-update:hover {
+  border-color: green;
+  color: green;
+  box-shadow: 0 0.5em 0.5em -0.4em green;
+  transform: translateY(-0.25em);
 }
 
 li,
@@ -153,5 +163,5 @@ p {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  transition: 2s ease;
+  border-color: green;
 }

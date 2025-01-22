@@ -9,22 +9,24 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script type="text/JavaScript" defer src="./jsFolder/home.js"></script>
     <link rel="stylesheet" href="./mainCss.css" />
   </head>
-  <body id="body-background-change" class="container body-background">
-    <!-- Page Container -->
-    <div
-      class="w3-content w3-margin-top w3-animate-left"
-      style="max-width: 1400px"
-    >
+  <body id="" class=" body-background">
+    
       <!-- Navigation tabs small pages-->
       <div
-        class="w3-container w3-text-black w3-hide-large w3-hide-medium"
+        class="w3-container w3-text-black "
         style="background-color: black"
       >
         <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">
@@ -32,22 +34,22 @@
         </button>
 
         <div
-          class="w3-sidebar w3-bar-block w3-border-right"
+          class="w3-sidebar w3-bar-block w3-border-right naviBar"
           style="display: none"
           id="mySidebar"
         >
-          <button onclick="w3_close()" class="w3-bar-item w3-large">
+          <button id="navItemClose" onclick="w3_close()" class="navItem w3-bar-item w3-large">
             Close &times;
           </button>
-          <a href="./index.html">
-            <button disabled class="w3-bar-item w3-button" onclick="">
+          <a class='navAnchor' href="./index.html">
+            <button disabled class="navItem w3-bar-item w3-button" onclick="">
               <i>Home</i>
             </button>
           </a>
           <a href="./projectOnePage.html">
             <button
               id="Project 1 btn"
-              class="projectBtn w3-bar-item w3-button"
+              class="navItem projectBtn w3-bar-item w3-button"
               onclick=""
             >
               <i>FireBorn</i>
@@ -56,7 +58,7 @@
           <a href="./projectTwoPage.html">
             <button
               id="Project 2 btn"
-              class="projectBtn w3-bar-item w3-button"
+              class="navItem projectBtn w3-bar-item w3-button"
               onclick=""
             >
               <i>Book Corner</i>
@@ -65,24 +67,28 @@
           <a href="./projectThreePage.html">
             <button
               id="Project 3 btn"
-              class="projectBtn w3-bar-item w3-button"
+              class="navItem projectBtn w3-bar-item w3-button"
               onclick=""
             >
               <i>First Website</i>
             </button>
           </a>
           <a href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry">
-            <button class="w3-bar-item w3-button" onclick="">
+            <button class="navItem w3-bar-item w3-button" onclick="">
               <i>Get in Touch</i>
             </button>
           </a>
         </div>
       </div>
-
+<!-- Page Container -->
+    <div
+      class="w3-content w3-margin-top w3-animate-left"
+      style="max-width: 1400px"
+    >
       <!-- The Grid -->
       <div class="w3-row-padding">
         <!-- Left Column -->
-        <div class="w3-third" style="background-color: none">
+        <div class="third" style="background-color: none">
           <!--Col 1 card 1 PICTURE-->
           <div class="" style="background-color: none">
             <div class="w3-display-container">
@@ -94,15 +100,18 @@
               />
               <!-- <img class=" w3-hover-opacity w3-hide-large w3-hide-medium" src="./ProjectPictures/Me_Profess.png" style="width:100%" alt="Avatar"> -->
 
-              <h3 id="" class="w3-center w3-margin-left">
+              <h1 id="" class="MyNameHeading">
                 <i>Andrew Brown</i>
-              </h3>
+              </h1>
               <div class="w3-center">
                 <a
                   class=""
                   href="https://docs.google.com/document/d/1M7IndGp7d2CAOfrbSFRrLOa-XiTSvFTk/edit?usp=sharing&ouid=115647528487262186906&rtpof=true&sd=true"
-                  download
-                  >Download My Resume!</a
+                  download>
+                    <button class="index-button-update" onclick="">
+                      Download My Resume!
+                    </button>
+                  </a
                 >
               </div>
               <!-- <script src="https://cdn.jsdelivr.net/npm/skulpt@1.0.0/dist/skulpt.min.js"></script> -->
@@ -124,49 +133,34 @@ t.forward(100)
             <div class="w3-margin-top w3-margin-left w3-margin-right">
               <p>
                 <i
-                  class="fa fa-briefcase fa-fw w3-margin-right w3-large"
+                  class="fa fa-briefcase fa-fw w3-margin-right "
                   style="color: black"
                 ></i
                 >Software Developer
               </p>
               <p>
                 <i
-                  class="fa fa-home fa-fw w3-margin-right w3-large"
+                  class="fa fa-home fa-fw w3-margin-right "
                   style="color: black"
                 ></i
                 >Cornelius, NC
               </p>
               <p>
                 <i
-                  class="fa fa-envelope fa-fw w3-margin-right w3-large"
+                  class="fa fa-envelope fa-fw w3-margin-right "
                   style="color: black"
                 ></i
                 >DevAndrewBro@gmail.com
               </p>
               <p>
                 <i
-                  class="fa fa-phone fa-fw w3-margin-right w3-large"
+                  class="fa fa-phone fa-fw w3-margin-right "
                   style="color: black"
                 ></i
                 >256-609-0166
               </p>
               <hr />
-              <h4>Select your color!</h4>
-              <form class="w3-margin-bottom">
-                <input
-                  type="color"
-                  id="background-selector"
-                  name="background-selector"
-                  value="#636369"
-                />
-                <label for="background-selector">Background</label>
-              </form>
-              <button class="index-button-update" onclick="changeBackground()">
-                Update!
-              </button>
-
-              <hr />
-              <p class="w3-large">
+              <h2 class="">
                 <b
                   ><i
                     class="fa fa-asterisk fa-fw w3-margin-right"
@@ -174,13 +168,13 @@ t.forward(100)
                   ></i
                   >Skills</b
                 >
-              </p>
+              </h2>
 
               <p>
                 Mobile Application Development &#40;Android Studio, Java&#41;
               </p>
               <div
-                class="w3-round-xlarge w3-small"
+                class="w3-round-xlarge barPercentages"
                 style="background-color: white"
               >
                 <a onclick="move1(90)">
@@ -196,7 +190,7 @@ t.forward(100)
 
               <p>Web Development &#40;CSS, HTML, JavaScript, Postman&#41;</p>
               <div
-                class="w3-round-xlarge w3-small"
+                class="w3-round-xlarge barPercentages"
                 style="background-color: white"
               >
                 <a onclick="move2(80)">
@@ -214,7 +208,7 @@ t.forward(100)
                 Database Development &#40;Firebase, MongoDB, MSSMS, MySQL&#41;
               </p>
               <div
-                class="w3-round-xlarge w3-small"
+                class="w3-round-xlarge barPercentages"
                 style="background-color: white"
               >
                 <a onclick="move3(75)">
@@ -230,7 +224,7 @@ t.forward(100)
 
               <p>C#, C++, Python, Amazon Web Services</p>
               <div
-                class="w3-round-xlarge w3-small"
+                class="w3-round-xlarge barPercentages"
                 style="background-color: white"
               >
                 <a onclick="move4(65)">
@@ -246,7 +240,7 @@ t.forward(100)
 
               <hr />
 
-              <p class="w3-large w3-text-theme">
+              <h2 class=" w3-text-theme">
                 <b
                   ><i
                     class="fa fa-globe fa-fw w3-margin-right"
@@ -254,12 +248,12 @@ t.forward(100)
                   ></i
                   >Languages</b
                 >
-              </p>
+              </h2>
               <p>English</p>
-              <div class="w3-light-grey w3-round-xlarge">
+              <div class="barPercentages w3-light-grey w3-round-xlarge">
                 <div
-                  class="w3-text-white w3-round-xlarge w3-center"
-                  style="background-color: green; height: 24px; width: 100%"
+                  class="w3-container w3-center w3-round-xlarge w3-text-white"
+                  style="background-color: green; width: 100%"
                 >
                   100% Fluent
                 </div>
@@ -286,7 +280,7 @@ t.forward(100)
         </div>
 
         <!-- Right Column -->
-        <div class="w3-twothird">
+        <div class="twothird">
           <!--Col 2 Card 1 -->
           <div
             class="w3-container w3-margin-bottom"
@@ -295,13 +289,13 @@ t.forward(100)
             <!-- PROJECTS BUTTON-->
 
             <div class="w3-large w3-text-theme w3-display-top">
-              <b
-                ><i
-                  class="fa fa-globe fa-fw w3-margin-right"
-                  style="color: black"
-                ></i
-                >See My Projects</b
-              >
+              <h2 class="w3-text-black w3-padding-16">
+              <i
+                class="fa fa-globe fa-fw w3-margin-right"
+                style="color: black"
+              ></i
+              >See My Projects
+            </h2>
               <!-- <span class="w3-text-black"><a id="" href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry" class="w3-hide-small w3-margin-right"><h3>Get in Touch</h3></a></span> -->
             </div>
 
@@ -319,7 +313,7 @@ t.forward(100)
                     src="./ProjectPictures/FireBornHomePic900x600px.png"
                     alt="project picture"
                   />
-                  <p id="home-caption-projects" class="w3-text">FireBorn</p>
+                  <p id="" class="w3-text home-caption-projects">FireBorn</p>
                 </a>
               </div>
 
@@ -332,7 +326,7 @@ t.forward(100)
                     style=""
                     alt="project picture"
                   />
-                  <p id="home--projects" class="w3-text">Book Club Meetup</p>
+                  <p id="" class="w3-text home-caption-projects">Book Club</p>
                 </a>
               </div>
 
@@ -345,13 +339,14 @@ t.forward(100)
                     style=""
                     alt="project picture"
                   />
-                  <p id="home-caption-projects" class="w3-text">
+                  <p id="" class="w3-text home-caption-projects">
                     First Website
                   </p>
                 </a>
               </div>
             </div>
 
+            <hr>
             <!-- PROJECTS BUTTON END-->
 
             <h2 class="w3-text-black w3-padding-16">
@@ -363,7 +358,7 @@ t.forward(100)
             </h2>
             <div class="w3-container">
               <!-- Work Experenice 1 (Current) -->
-              <h5 class=""><b>Software Asset Management - Duke Energy</b></h5>
+              <h4 class=""><b>Software Asset Management - Duke Energy</b></h4>
               <h6 class="" style="color: black">
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2024 -
                 <span class="current-box w3-tag w3-round">Current</span>
@@ -378,9 +373,9 @@ t.forward(100)
 
             <!-- Work Experience 2-->
             <div class="w3-container">
-              <h5 class="">
+              <h4 class="">
                 <b>Workstation Support Specialist - Duke Energy</b>
-              </h5>
+              </h4>
               <h6 class="" style="color: black">
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2023 -
                 <span class="current-box w3-tag w3-round">Current</span>
@@ -415,7 +410,7 @@ t.forward(100)
 
             <!--Education 1-->
             <div class="w3-container">
-              <h5 class=""><b>University of North Carolina at Charlotte</b></h5>
+              <h4 class=""><b>University of North Carolina at Charlotte</b></h4>
               <h6 class="" style="color: black">
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2023
               </h6>
@@ -426,7 +421,7 @@ t.forward(100)
 
             <!--Education 2-->
             <div class="w3-container">
-              <h5 class=""><b>Central Piedmont Community College</b></h5>
+              <h4 class=""><b>Central Piedmont Community College</b></h4>
               <h6 class="" style="color: black">
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2020
               </h6>
@@ -446,7 +441,7 @@ t.forward(100)
 
     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
     <footer
-      class="w3-container w3-text-white w3-center w3-margin-top"
+      class="w3-container w3-text-white w3-center w3-margin-top footerCss"
       style="background-color: black"
     >
       <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -455,7 +450,7 @@ t.forward(100)
       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i> -->
       <a href="https://www.linkedin.com/in/andrew-brown-developer/">
-        <p style="color: white">Find me on LinkedIn.</p>
+        <p style="color: white">Find Me On LinkedIn</p>
         <i class="fa fa-linkedin w3-hover-opacity"></i>
       </a>
       <!-- End footer -->

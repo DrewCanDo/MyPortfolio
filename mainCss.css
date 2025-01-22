@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
   margin: 0;
   font-size: 25px;
 }
@@ -11,11 +12,11 @@ h5,
 h6,
 li,
 ul {
-  font-family: "Roboto", serif;
+  font-family: 'Roboto', serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  box-shadow: 17px 9px 52px 23px rgba(255,255,255,0.5);
+  box-shadow: 17px 9px 52px 23px rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.35);
 }
 
@@ -27,23 +28,23 @@ h2 {
   font-size: 1.5rem;
 }
 
-h3{
+h3 {
   font-size: 1rem;
 }
 
 p {
-  font-family: "Montserrat", serif;
+  font-family: 'Montserrat', serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: .8rem;
-  box-shadow: 17px 9px 52px 23px rgba(255,255,255,0.5);
+  font-size: 0.8rem;
+  box-shadow: 17px 9px 52px 23px rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.35);
 }
 
 .MyNameHeading {
   text-align: center;
-  font-family: "Press Start 2P", serif;
+  font-family: 'Press Start 2P', serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.25rem;
@@ -51,11 +52,11 @@ p {
 }
 
 .barPercentages {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .body-background {
-  background-image: url("./OtherPictures/lightGreenWhiteBG.jpg");
+  background-image: url('./OtherPictures/lightGreenWhiteBG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -87,7 +88,7 @@ p {
   border: 2px solid;
   border-color: white;
   padding: 0.5em 3em;
-  font-size: .8em;
+  font-size: 0.8em;
   transition: all 0.25s;
   margin-bottom: 15px;
 }
@@ -118,10 +119,30 @@ hr {
   border-top: 1px solid black;
 }
 
-@media (min-width: 601px){
-  .naviBar{
+@media (min-width: 601px) {
+  .naviBar {
     width: 33.3333%;
   }
+}
+
+.blkNavBar {
+  background-color: black;
+  color: black;
+  padding: 0.01em 16px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 53px;
+}
+
+.blkNavBarButton {
+  height: 53px;
+  font-size: 25px;
+}
+
+.pageContainer {
+  margin-top: 53px;
 }
 
 .navItem {
@@ -138,19 +159,39 @@ hr {
   margin-left: 15px;
 }
 
-@media (min-width: 601px){
+@media (min-width: 601px) {
   .third {
-    padding:0 8px;
+    padding: 0 8px;
     float: left;
-    width: 33.33333%
+    width: 33.33333%;
   }
 }
 
 @media (min-width: 601px) {
   .twothird {
-    padding:0 8px;
+    padding: 0 8px;
     float: left;
-    width: 66.66666%
+    width: 66.66666%;
+  }
+}
+
+@media (max-width: 1207px) {
+  .index-button-update {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.6rem;
   }
 }
 
@@ -196,7 +237,7 @@ hr {
   border-color: green;
 }
 
-.home-caption-projects{
+.home-caption-projects {
   font-size: 20px;
   font-style: italic;
 }
@@ -205,10 +246,10 @@ footer {
   margin: 0;
 }
 
-.footerCss a p{
+.footerCss a p {
   background: none;
   box-shadow: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-decoration: none;
   letter-spacing: 8px;
 }
@@ -218,6 +259,6 @@ footer {
 }
 
 .fa-linkedin:before {
-    content: "\f0e1";
-    font-size: 1.5rem;
+  content: '\f0e1';
+  font-size: 1.5rem;
 }

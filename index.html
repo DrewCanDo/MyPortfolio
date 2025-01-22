@@ -9,80 +9,86 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <script type="text/JavaScript" defer src="./jsFolder/home.js"></script>
     <link rel="stylesheet" href="./mainCss.css" />
   </head>
-  <body id="" class=" body-background">
-    
-      <!-- Navigation tabs small pages-->
-      <div
-        class="w3-container w3-text-black "
-        style="background-color: black"
-      >
-        <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">
-          ☰
-        </button>
+  <body id="" class="body-background">
+    <!-- Navigation tabs small pages-->
+    <div class="blkNavBar" style="background-color: black">
+      <button class="blkNavBarButton w3-button w3-black" onclick="w3_open()">
+        ☰
+      </button>
 
-        <div
-          class="w3-sidebar w3-bar-block w3-border-right naviBar"
-          style="display: none"
-          id="mySidebar"
+      <div
+        class="w3-sidebar w3-bar-block w3-border-right naviBar"
+        style="display: none"
+        id="mySidebar"
+      >
+        <button
+          id="navItemClose"
+          onclick="w3_close()"
+          class="navItem w3-bar-item w3-large"
         >
-          <button id="navItemClose" onclick="w3_close()" class="navItem w3-bar-item w3-large">
-            Close &times;
+          Close &times;
+        </button>
+        <a class="navAnchor" href="./index.html">
+          <button disabled class="navItem w3-bar-item w3-button" onclick="">
+            <i>Home</i>
           </button>
-          <a class='navAnchor' href="./index.html">
-            <button disabled class="navItem w3-bar-item w3-button" onclick="">
-              <i>Home</i>
-            </button>
-          </a>
-          <a href="./projectOnePage.html">
-            <button
-              id="Project 1 btn"
-              class="navItem projectBtn w3-bar-item w3-button"
-              onclick=""
-            >
-              <i>FireBorn</i>
-            </button>
-          </a>
-          <a href="./projectTwoPage.html">
-            <button
-              id="Project 2 btn"
-              class="navItem projectBtn w3-bar-item w3-button"
-              onclick=""
-            >
-              <i>Book Corner</i>
-            </button>
-          </a>
-          <a href="./projectThreePage.html">
-            <button
-              id="Project 3 btn"
-              class="navItem projectBtn w3-bar-item w3-button"
-              onclick=""
-            >
-              <i>First Website</i>
-            </button>
-          </a>
-          <a href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry">
-            <button class="navItem w3-bar-item w3-button" onclick="">
-              <i>Get in Touch</i>
-            </button>
-          </a>
-        </div>
+        </a>
+        <a href="./projectOnePage.html">
+          <button
+            id="Project 1 btn"
+            class="navItem projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>FireBorn</i>
+          </button>
+        </a>
+        <a href="./projectTwoPage.html">
+          <button
+            id="Project 2 btn"
+            class="navItem projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>Book Corner</i>
+          </button>
+        </a>
+        <a href="./projectThreePage.html">
+          <button
+            id="Project 3 btn"
+            class="navItem projectBtn w3-bar-item w3-button"
+            onclick=""
+          >
+            <i>First Website</i>
+          </button>
+        </a>
+        <a href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry">
+          <button class="navItem w3-bar-item w3-button" onclick="">
+            <i>Get in Touch</i>
+          </button>
+        </a>
       </div>
-<!-- Page Container -->
+    </div>
+    <!-- Page Container -->
     <div
-      class="w3-content w3-margin-top w3-animate-left"
+      class="pageContainer w3-content w3-animate-left"
       style="max-width: 1400px"
     >
       <!-- The Grid -->
@@ -107,12 +113,12 @@
                 <a
                   class=""
                   href="https://docs.google.com/document/d/1M7IndGp7d2CAOfrbSFRrLOa-XiTSvFTk/edit?usp=sharing&ouid=115647528487262186906&rtpof=true&sd=true"
-                  download>
-                    <button class="index-button-update" onclick="">
-                      Download My Resume!
-                    </button>
-                  </a
+                  download
                 >
+                  <button class="index-button-update" onclick="">
+                    Download My Resume!
+                  </button>
+                </a>
               </div>
               <!-- <script src="https://cdn.jsdelivr.net/npm/skulpt@1.0.0/dist/skulpt.min.js"></script> -->
               <!-- <script>
@@ -133,28 +139,31 @@ t.forward(100)
             <div class="w3-margin-top w3-margin-left w3-margin-right">
               <p>
                 <i
-                  class="fa fa-briefcase fa-fw w3-margin-right "
+                  class="fa fa-briefcase fa-fw w3-margin-right"
                   style="color: black"
                 ></i
                 >Software Developer
               </p>
               <p>
                 <i
-                  class="fa fa-home fa-fw w3-margin-right "
+                  class="fa fa-home fa-fw w3-margin-right"
                   style="color: black"
                 ></i
                 >Cornelius, NC
               </p>
+              <div>
+                <p>
+                  <i
+                    class="fa fa-envelope fa-fw w3-margin-right"
+                    style="color: black"
+                  ></i
+                  >DevAndrewBro@gmail.com
+                </p>
+              </div>
+
               <p>
                 <i
-                  class="fa fa-envelope fa-fw w3-margin-right "
-                  style="color: black"
-                ></i
-                >DevAndrewBro@gmail.com
-              </p>
-              <p>
-                <i
-                  class="fa fa-phone fa-fw w3-margin-right "
+                  class="fa fa-phone fa-fw w3-margin-right"
                   style="color: black"
                 ></i
                 >256-609-0166
@@ -240,7 +249,7 @@ t.forward(100)
 
               <hr />
 
-              <h2 class=" w3-text-theme">
+              <h2 class="w3-text-theme">
                 <b
                   ><i
                     class="fa fa-globe fa-fw w3-margin-right"
@@ -290,12 +299,12 @@ t.forward(100)
 
             <div class="w3-large w3-text-theme w3-display-top">
               <h2 class="w3-text-black w3-padding-16">
-              <i
-                class="fa fa-globe fa-fw w3-margin-right"
-                style="color: black"
-              ></i
-              >See My Projects
-            </h2>
+                <i
+                  class="fa fa-globe fa-fw w3-margin-right"
+                  style="color: black"
+                ></i
+                >See My Projects
+              </h2>
               <!-- <span class="w3-text-black"><a id="" href="mailto:devandrewbro@gmail.com?subject=Opportunity%20Inquiry" class="w3-hide-small w3-margin-right"><h3>Get in Touch</h3></a></span> -->
             </div>
 
@@ -346,7 +355,7 @@ t.forward(100)
               </div>
             </div>
 
-            <hr>
+            <hr />
             <!-- PROJECTS BUTTON END-->
 
             <h2 class="w3-text-black w3-padding-16">

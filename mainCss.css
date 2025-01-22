@@ -134,6 +134,12 @@ hr {
   left: 0px;
   width: 100vw;
   height: 53px;
+  z-index: 1;
+  opacity: 75%;
+}
+
+.blkNavBar:hover {
+  opacity: 100;
 }
 
 .blkNavBarButton {

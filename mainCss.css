@@ -151,6 +151,11 @@ hr {
   margin-top: 53px;
 }
 
+.PrecentBar {
+  font-size: 0.7rem;
+  border-radius: 16px;
+}
+
 .navItem {
   margin-top: 15px;
 }
@@ -185,6 +190,10 @@ hr {
   .index-button-update {
     font-size: 0.5rem;
   }
+
+  .PrecentBar {
+    font-size: 0.6rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -198,6 +207,10 @@ hr {
 
   p {
     font-size: 0.6rem;
+  }
+
+  .PrecentBar {
+    font-size: 0.5rem;
   }
 }
 

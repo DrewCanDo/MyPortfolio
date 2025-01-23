@@ -170,11 +170,16 @@ hr {
   margin-left: 15px;
 }
 
+.third{
+  margin-bottom: -3rem;
+}
+
 @media (min-width: 601px) {
   .third {
     padding: 0 8px;
     float: left;
     width: 33.33333%;
+    margin-bottom: 0;
   }
 }
 
@@ -219,15 +224,16 @@ hr {
 }
 
 .project-image {
-  max-width: 600px;
-  width: 100%;
+  width: 95%;
   border: 2px, solid;
 }
 
 .center-project-img {
   display: flex;
-  justify-content: center;
-  margin-top: 16px;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  justify-content: space-evenly;
+  margin-top: 24px;
 }
 
 .caption {
@@ -256,13 +262,22 @@ hr {
   border-color: green;
 }
 
-.home-caption-projects {
-  font-size: 20px;
-  font-style: italic;
+.grow a {
+  text-decoration: none;
 }
 
-footer {
+.home-caption-projects {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footerCss {
   margin: 0;
+  color: white;
+  background-color: black;
+  text-align: center;
 }
 
 .footerCss a p {
@@ -280,4 +295,14 @@ footer {
 .fa-linkedin:before {
   content: '\f0e1';
   font-size: 1.5rem;
+}
+
+@media (max-width: 601px) {
+    .center-project-img {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    width: 100%;
+  }
 }
